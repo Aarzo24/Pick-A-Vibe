@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+}
+    .topnav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Distribute space evenly */
+      }
+      
+    
+
+  .search-container {
+    position: relative; /* Needed for icon positioning */
+    display: flex; /* Make container a flexbox for alignment */
+  }
+  
+  .search-bar {
+    width: 100%; /* Stretch to full width of container */
+    padding: 8px 16px; /* Add padding for spacing around text */
+    border: 2px solid #ddd;
+    border-radius: 5px; /* Rounded corners for aesthetics */
+  }
+  
+  .search-icon {
+    position: absolute; /* Position icon absolutely within container */
+    top: 50%; /* Vertical centering */
+    transform: translateY(-50%); /* Adjust vertical position if needed */
+    right: 10px; /* Spacing from right edge */
+    font-size: 18px; /* Adjust icon size as needed */
+    color: #999; /* Gray color for icon */
+  }
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 15px;
+    padding: 10px;
+}
+      
+    
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Adjust scale factor as needed */
+  }
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow properties */
+    transform: scale(1.02); /* Slight zoom for 3D effect */
+}
+
+.grid-item p {
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family:comic sans;
+}
+
+.green{
+    background-color:#A2FF9B;
+    display: inline-block;
+border-radius: 1px; 
+}
+
+.yellow{
+    background-color:#f0e370;
+    display: inline-block;
+border-radius: 1px; 
+}
+
+.orange{
+    background-color:#f3b65b;
+    display: inline-block;
+border-radius: 1px; 
+}

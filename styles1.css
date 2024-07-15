@@ -1,0 +1,65 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+overflow-y: scroll;
+overflow-x: hidden;
+margin: 0 auto;
+}
+
+header {
+background-color: #ffffff;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+align-items: center;
+}
+
+.categories {
+align-items: center;
+margin: 0 auto;
+}
+
+.curved-image {
+border-radius: 20px;
+width: 100%; /* Make image responsive */
+max-width: 1100px; /* Set maximum width for larger screens */
+}
+
+.bottom {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+/* Mobile styles */
+.grid-container {
+grid-template-columns: 1fr; /* One column for smaller screens */
+}
+/* Other mobile-specific styles */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* Tablet styles */
+.grid-container {
+grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+}
+/* Other tablet-specific styles */
+}
+
+@media (min-width: 992px) {
+/* Desktop styles */
+.grid-container {
+grid-template-columns: repeat(4, 1fr); /* Four columns for desktops */
+}
+/* Other desktop-specific styles */
+}
