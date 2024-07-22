@@ -5,18 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles3.css">
+    
     <title>Select Vibes</title>
+    <style>
+        body{
+            background-color: black;
+        }
+            .topnav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; /* Distribute space evenly */
+              }
+              
+            
+        
+          .search-container {
+            position: relative; /* Needed for icon positioning */
+            display: flex; /* Make container a flexbox for alignment */
+          }
+          
+          .search-bar {
+            width: 100%; /* Stretch to full width of container */
+            height: 38px;
+            padding: 2px 16px; /* Add padding for spacing around text */
+            border: 2px solid #ddd;
+            border-radius: 5px; /* Rounded corners for aesthetics */
+          }
+          
+          .search-icon {
+            position: absolute; /* Position icon absolutely within container */
+            top: 50%; /* Vertical centering */
+            transform: translateY(-50%); /* Adjust vertical position if needed */
+            right: 10px; /* Spacing from right edge */
+            font-size: 18px; /* Adjust icon size as needed */
+            color: #080707; /* Gray color for icon */
+          }
+          
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+            gap: 15px;
+            padding: 10px;
+        }
+              
+            
+        
+        .grid-item {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .grid-item img:hover {
+            transform: scale(1.05); /* Adjust scale factor as needed */
+          }
+        
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow properties */
+            transform: scale(1.02); /* Slight zoom for 3D effect */
+        }
+        
+        .grid-item h3 {
+            color: black;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family:comic sans;
+        }
+        
+        .green{
+            background-color:#A2FF9B;
+            display: inline-block;
+        border-radius: 1px; 
+        }
+        
+        .yellow{
+            background-color:#f0e370;
+            display: inline-block;
+        border-radius: 1px; 
+        }
+        
+        .orange{
+            background-color:#f3b65b;
+            display: inline-block;
+        border-radius: 1px; 
+        }
+    </style>
 </head>
 <body>
     <div class="topnav">
         <i class="fa fa-user icon fa-2x" style="color:white"></i>
-        <h2 style="color:white">Search</h2>
+        <h1 style="color:white">Search</h1>
         <i class="fa fa-camera icon fa-2x" style="color:white"></i>
       </div>
 
       <div class="search-container">
-        <input type="text" class="search-bar" placeholder="What's your main character vibe for today?" style="color:white">
+        <input type="text" class="search-bar" placeholder="What's your main character vibe for today?"
+          style="color:white">
         <i class="fa fa-search search-icon"></i>
       </div>
       
@@ -25,46 +111,47 @@
         <div class="grid-item">
             <img src="images/baddie (1).png" alt="Baddie Girl">
             <span class="green">
-                <p><b><em>Slay your way- Dark, Distressed, Defiant</em></b></p>
+                <h3><b>Slay your way- Dark, Distressed, Defiant</b></h3>
             </span>
         </div>
         <div class="grid-item">
-            <a href="4-cleangirl.html" target="_blank"><img src="images\Clean Girl Style.png" alt="Clean Girl"></a>
+            <img src="images/inMyElement.png" alt="In My Element">
             <span class="green">
-            <p><b><em>Simplicity is the keynote of all true elegance.</em></b></p>
+            <h3><b>Who Says Simple Can’t be Chic!</b></h3>
         </span>
         </div>
+        
         
         <div class="grid-item">
             <a href="5-kpop.html" target="_blank"><img src="images\kpop2.png" alt="K-POP Era"></a>
             <span class="yellow">
-            <p><b><em>K-pop vibes-From Seoul streets to your wardrobe</em></b></p>
+            <h3><b>K-pop vibes-From Seoul streets to your wardrobe</b></h3>
             </span>
         </div>
         <div class="grid-item">
             <img src="images/y2k.png" alt="Y2K Fit">
             <span class="yellow">
-            <p><b><em>Rock the Y2K vibes– where retro meets futuristic chic!</em></b></p>
+            <h3><b>Rock the Y2K vibes– where retro meets futuristic chic!</b></h3>
         </span>
         </div>
         
         <div class="grid-item">
             <a href="6-vintage.html" target="_blank"><img src="images\vintage.png" alt="Vintage Vibes"></a>
             <span class="orange">
-            <p><b><em>Rewinding to the 90s, because some trends never fade.</em></b></p>
+            <h3><b>Rewinding to the 90s, because some trends never fade.</b></h3>
         </span>
         </div>
-        
         <div class="grid-item">
-            <img src="images/inMyElement.png" alt="In My Element">
-            <span class="orange">
-            <p><b><em>Who Says Simple Can’t be Chic!</em></b></p>
+            <a href="4-cleangirl.html" target="_blank"><img src="images\Clean Girl Style.png" alt="Clean Girl"></a>
+            <span class="green">
+            <h3><b>Simplicity is the keynote of all true elegance.</b></h3>
         </span>
         </div>
+       
         <div class="grid-item">
             <a href="7-cute.html" target="_blank"><img src="images\cute.png" alt="Feeling Cute Outfit"></a>
             <span class="green">
-            <p><b><em>Breeze through summer in style with our cute casual dresses</em></b></p>
+            <h3><b>Breeze through summer in style with our cute casual dresses</b></h3>
         </span>
         </div>
         

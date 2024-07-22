@@ -27,7 +27,7 @@ body{
     transform: translateY(-50%); /* Adjust vertical position if needed */
     right: 10px; /* Spacing from right edge */
     font-size: 18px; /* Adjust icon size as needed */
-    color: #999; /* Gray color for icon */
+    color: #080707; /* Gray color for icon */
   }
   
 .grid-container {
