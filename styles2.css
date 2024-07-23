@@ -1,62 +1,52 @@
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 
 body {
-    margin: 0;
-    font-family: 'Gorditas', cursive;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: url('images/bg.png') no-repeat center center fixed;
-    background-size: cover;
-    overflow-y: scroll;
-}
-
-.topnav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
+        margin: 0;
+        padding: 0;
+        font-family: 'Gorditas', cursive;
+        min-height: 100vh;
+        background: url('images/bg.png') no-repeat center center fixed;
+        background-size: cover; /* Ensures the background covers the entire viewport */
+        overflow-x: hidden; /* Prevents horizontal scroll */
+    }
 
 .text-container {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    text-align: left;
-    margin-left: 8px;
-    margin-top: 560px;
-    font-size: 26px; /* Adjust font size as needed */
-    font-weight: bold;
-    background: linear-gradient(to right, #ff0080, #ff8000); /* Adjust colors */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+        width: 100%; /* Ensure it uses full width */
+        height: 100%; /* Ensure it uses full height if needed */
+        max-width: 600px; /* Adjust as needed */
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0 auto;
+        background: linear-gradient(to right, #ff0080, #ff8000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 
 .proceed-button {
-    background: linear-gradient(to right, #ff0080, #ff8000);
-    color: white;
-    border: none;
-    padding: 9px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    position: fixed;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 20px); /* Make the button width responsive */;
-    max-width: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    
+        background: linear-gradient(to right, #ff0080, #ff8000);
+        color: white;
+        border: none;
+        padding: 9px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 20px); /* Ensure it scales with the viewport width */
+        max-width: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
 
 @media (min-width: 768px) {
     .text-container {
@@ -68,4 +58,8 @@ body {
     .text-container {
         font-size: 3rem;
     }
+}
+
+html, body {
+    height: 100%;
 }
