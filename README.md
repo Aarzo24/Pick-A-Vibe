@@ -12,7 +12,8 @@ For better UI after clicking the link -> right click -> inspect -> set dimension
 You can access and run it directly in your web browser (mobile or desktop) - No installation required!
 
 ## **Snapshots**
-![image](https://github.com/user-attachments/assets/318e0763-24a2-4b36-be81-f8d2b87d3285) ![image](https://github.com/user-attachments/assets/9c6ee353-4833-4219-b6c7-674572ae9715) ![image](https://github.com/user-attachments/assets/e0a60bd2-71df-49a1-b978-0d06ca108f44)
+![image](https://github.com/user-attachments/assets/f746a582-7d3d-4f47-9d26-01e28bebb077)
+
 
 
 
